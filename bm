@@ -9,10 +9,10 @@ FLAG_DEBUG = 0
 VERBOSE = True
 CC = "g++"
 SRC_PATH = "src"
-CFLAGS = f"-I {SRC_PATH} -g -Werror=switch-enum -export-dynamic" + ("" if not FLAG_DEBUG else " -D DEBUG")
+CFLAGS = f"-I {SRC_PATH} -g -Werror=switch-enum" + ("" if not FLAG_DEBUG else " -D DEBUG")
 LFLAGS = ""
 OBJ_PATH = "temp"
-BIN = "bin/da" # Bin path is deduced from this.
+BIN = "bin/my_incredible_program" # Bin path is deduced from this.
 CONFIG = "config/bm.json" # Same here
 EXT = ".cpp"
 
